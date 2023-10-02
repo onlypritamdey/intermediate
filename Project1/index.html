@@ -114,7 +114,6 @@
     flex-direction: column; 
     }
     .chat-box {
-    border-radius: 10px;
     margin: 5px;
     padding: 5px;
     max-width: 60%;
@@ -122,11 +121,13 @@
     word-break: break-word;
     }
     .left {
+    border-radius: 10px 10px 10px 0;
     color: hsl(289, 100%, 72%); 
     align-self: flex-start; 
     background-color: hsla(276, 100%, 81%, 10%);
     }
     .right {
+    border-radius: 10px 10px 0 10px;
     background-color: white; 
     color: black; 
     align-self: flex-end; 
@@ -158,14 +159,13 @@
     }
     .bottom{
     position: relative;
-    max-width: 100%;
-    margin: 10px;
-    padding: 0;
+    width: 100%;
+    padding: 5px;
     }
     #enter{
     position: absolute;
-    right: 5;
-    top: 3.5;
+    right: 9;
+    top: 9;
     color: white;
     background-color: black;
     height: 20px;
@@ -173,9 +173,8 @@
     border-radius: 50%;
     }
     .bottom input{
-    position: relative;
-    min-width: 100%;
-    padding: 5px;
+    width: 100%;
+    padding: 7px;
     border-radius: 20px;
     margin: 0;
     }
@@ -205,8 +204,7 @@
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    
-    @media(max-width:764px){
+    @media(max-width:765px){
         .main{
             flex-direction: column;
         }
@@ -224,6 +222,7 @@
             z-index: -1;
         }
     }
+    
   </style>
 </head>
 <body>
@@ -311,4 +310,4 @@
     Coded by <a href="#">Pritam dey</a>.
     </div>
 </body>
-               </html>
+                   </html>
