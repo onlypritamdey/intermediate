@@ -15,7 +15,6 @@
      padding:0;
      box-sizing:border-box;
      border: none;
-     outline: none;
     }
     body{
         background-color: hsl(270, 20%, 96%);
@@ -29,17 +28,17 @@
      justify-content: center;
     }
     .bg1{
-     position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width:25%;
-    height: 90%;
+    height: 80%;
     border-radius: 0 0 100px 100px;
     background: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
     }
 
 
-.phone {
+    .phone {
     position: relative;
     max-height: 60%;
     max-width: 20%;
@@ -51,17 +50,17 @@
     flex-direction: column;
     align-items: center;
     background-color: hsl(270, 20%, 96%);
-}
+    }
 
-.top-bg {
+    .top-bg {
     width: 100%;
     min-height: 10%;
     padding: 5px;
     border-radius: 20px 20px 0 0;
     background: linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
-}
+     }
 
-.bar {
+    .bar {
     position: absolute;
     border-radius: 0 0 10px 10px;
     width: 50%;
@@ -69,145 +68,162 @@
     top: 0;
     background-color: white;
     border: 1px solid white;
-}
+    }
 
-.row {
+    .row {
     color: white;
     gap: 10px;
     margin: 10px 0px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-}
+    justify-content: space-between;
+    }
 
-.r1 {
+    .r1 {
     display: flex;
     align-items: center;
     gap: 5px;
-}
+    }
 
-.t1 {
+    .t1 {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: start;
-}
+    }
 
-.t1 h4 {
+    .t1 h4 {
     font-size: 10px;
-}
-
-.t1 p {
+    }
+    .t1 p {
     color:hsl(289, 100%, 72%);
     font-size: 8px;
-}
-
-#icon {
+    }
+    #icon {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     outline: 1px solid white;
-}
-
-.chat {
+    }
+    .chat {
     position: relative;
     width: 100%;
     gap: 10px;
     display: flex;
     flex-direction: column; 
-}
-
-.chat-box {
+    }
+    .chat-box {
     border-radius: 10px;
     margin: 5px;
     padding: 5px;
-    max-width: 70%;
+    max-width: 60%;
     font-size: 8px;
     word-break: break-word;
-}
-
-.left {
+    }
+    .left {
     color: hsl(289, 100%, 72%); 
     align-self: flex-start; 
     background-color: hsla(276, 100%, 81%, 10%);
-}
-
-.right {
+    }
+    .right {
     background-color: white; 
     color: black; 
     align-self: flex-end; 
-}
-
-.right img {
+    }
+    .right img {
     width: 20px;
     height: 20px;
-}
-.circle{
+    }
+    .circle{
     border: 0.5px solid white;
     border-radius: 50%;
     height: 10px;
     width: 10px;
-}
-.spl{
-color:white;
-background: linear-gradient(to right, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
-}
-.l2{
+    }
+    .spl{
+    color:white;
+    background: linear-gradient(to right, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    }
+    .l2{
     display: flex;
     align-items: center;
     gap: 5px;
-}
-.l2 p{
+    }
+    .l2 p{
     font-size: 5px;
-}
-#price{
-    font-weight: bold;
-}
-.bottom{
+    }
+    #price{
+    font-weight: 900;
+    }
+    .bottom{
     position: relative;
     max-width: 100%;
-    padding: 10px;
-}
-#enter{
+    margin: 10px;
+    padding: 0;
+    }
+    #enter{
     position: absolute;
-    right: 22.5;
-    top: 22.5;
+    right: 5;
+    top: 3.5;
     color: white;
     background-color: black;
     height: 20px;
     width: 20px;
     border-radius: 50%;
-}
-.bottom input {
+    }
+    .bottom input{
     position: relative;
-    width: 100%;
+    min-width: 100%;
     padding: 5px;
     border-radius: 20px;
-}
-
-.txt{
+    margin: 0;
+    }
+    .txt{
     align-self: center;
     word-break: break-word;
     max-width: 40%;
-}
-.txt p{
+    }
+    .txt h1{
+    color: hsl(271, 36%, 24%);
+    margin: 20px;
+    }
+    .txt p{
+    line-height: 30px;
     font-size: 16px;
     color: grey;
-}
-
+    }
     .bg2{
     position: absolute;
     bottom: 0;
     right: 0;
     rotate: 180deg;
     width:25%;
-    height: 90%;
+    height: 80%;
     border-radius: 0 0 80px 100px;
     background-color: hsla(276, 100%, 81%, 10%);
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
+    @media(max-width:764px){
+        .main{
+            flex-direction: column;
+        }
+        .phone{
+            margin-top: 20%;
+            max-width: 50%;
+        }
+        .txt{
+            min-width: 90%;
+            text-align: center;
+        }
+        .bg1,.bg2{
+            min-width: 50%;
+            max-height: 60%;
+            z-index: -1;
+        }
+    }
   </style>
 </head>
 <body>
@@ -295,4 +311,4 @@ background: linear-gradient(to right, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
     Coded by <a href="#">Pritam dey</a>.
     </div>
 </body>
-</html>
+               </html>
